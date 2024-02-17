@@ -6,6 +6,7 @@ function Page() {
   const [second, setSecond] = useState(18);
   const [third, setThird] = useState(18);
 
+  // here this pure function do get trigger if other then first or second value changes anytime
   const pureFunction = () => {
     console.log("pureFuction is running");
     let c = Number(first) + Number(second);
