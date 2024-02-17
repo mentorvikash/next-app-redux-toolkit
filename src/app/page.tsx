@@ -9,8 +9,6 @@ import {
 export default function Home() {
   const count = useAppSelector((state: any) => state.counter.count);
   const dispatch = useAppDispatch();
-  console.log({ count });
-
   return (
     // by use of provider we now had passed the store value to whole component.
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
